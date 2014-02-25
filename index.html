@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Wordly</title>
+
+        <style>
+        h1,h2 {
+            text-align: center;
+        }
+        div.wrapper {
+            width:700px;
+            margin: 0 auto;
+        }
+        details {
+            margin:0 auto;
+            width:600px;
+        }
+        div.form{
+            text-align: center;
+        }
+        #list{
+            width:400px;
+            height:400px;
+        }
+        #suffixes{
+            width:200px;
+            height:400px;
+        }
+        #combine{
+            font-size:1.2em;
+        }
+        #results{
+            column-count:3;
+            -moz-column-count:3; /* Firefox */
+            -webkit-column-count:3; /* Safari and Chrome */
+            margin:0 auto;
+            width:600px;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <h1>Wordly</h1>
+            <details>
+                <summary>Usage</summary>
+                Enter a list of words, one per line in the word list box below.  Optionally, enter suffixes one per line on the suffixes box on the right.
+            </details>
+
+            <div class="form">
+                <div>
+                    <textarea id="list" placeholder="Word List"></textarea>
+                    <textarea id="suffixes" placeholder="Suffixes"></textarea>
+                </div>
+                <div>
+                    <input type="checkbox" id="double" checked value="1"><label for="double">Allow doubles</label>
+                    <input type="checkbox" id="shuffle" checked value="1"><label for="shuffle">Shuffle</label>                    
+                    <button id="clear">Clear localStorage</combine>                        
+                </div>
+                <div>
+                    <button id="combine">Combine</combine>
+                </div>
+            </div>
+
+            <h2>Results</h2>
+            <div id="results">
+
+            </div>
+        </div>
+        <script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
+        <script src="js/underscore.js" type="text/javascript"></script>
+        
+        <script src="js/main.js" type="text/javascript"></script>
+    </body>
+</html>
